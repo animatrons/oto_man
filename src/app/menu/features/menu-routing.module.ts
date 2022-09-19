@@ -9,7 +9,11 @@ const routes: Routes = [
     children: [
       {
         path: 'customers',
-        // loadChildren: () => import('../')
+        loadChildren: () => import('./customers/features/cutomers.module').then(m => m.CutomersModule)
+      },
+      {
+        path: 'autos',
+        loadChildren: () => import('./autos/features/autos.module').then(m => m.AutosModule)
       }
     ]
   }

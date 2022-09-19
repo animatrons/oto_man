@@ -9,10 +9,13 @@
 <h4>Open one of these</h4>
 <ul>
   <li>
-    <a routerLink="">Customers</a>
+    <a [routerLink]="['customers']">Customers</a>
   </li>
   <li>
-    <a routerLink="">Autos</a>
+    <a [routerLink]="['autos']">Autos</a>
+  </li>
+  <li>
+    <a routerLink="/home">Back home</a>
   </li>
 </ul>
 <router-outlet></router-outlet>

@@ -8,12 +8,10 @@ import { EffectsModule } from '@ngrx/effects';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { environment } from '../environments/environment';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { CustomersListComponent } from './custumers/features/customers-list/customers-list.component';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    CustomersListComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
