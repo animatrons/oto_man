@@ -5,7 +5,13 @@ import { HomeComponent } from './home-page/home.component';
 const routes: Routes = [
   {
     path: '',
-    component: HomeComponent
+    component: HomeComponent,
+    children: [
+      {
+        path: 'login',
+        loadChildren: () => import('../../shared/features/login/login.module').then((m) => m.LoginModule),
+      }
+    ]
   }
 ];
 
