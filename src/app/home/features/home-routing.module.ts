@@ -9,6 +9,7 @@ const routes: Routes = [
     children: [
       {
         path: 'login',
+        // TODO: make shared into a library
         loadChildren: () => import('../../shared/features/login/login.module').then((m) => m.LoginModule),
       }
     ]

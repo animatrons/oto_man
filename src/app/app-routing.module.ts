@@ -14,11 +14,7 @@ const routes: Routes = [
   {
     path: 'menu',
     loadChildren: () => import('./menu/features/menu.module').then((m) => m.MenuModule),
-  },
-  // {
-  //   path: 'login',
-  //   loadChildren: () => import('./shared/features/login/login.module').then((m) => m.LoginModule),
-  // }
+  }
 ];
 
 @NgModule({

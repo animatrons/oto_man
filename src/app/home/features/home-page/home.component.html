@@ -1,10 +1,23 @@
-<h1>Welcome</h1>
-<ul>
-  <li>
-    <a routerLink="/menu">Get started</a>
-  </li>
-  <li>
-    <a routerLink="/home/login/form">Login first</a>
-  </li>
-</ul>
-<router-outlet></router-outlet>
+<div class="page-wrapper">
+  <div class="content-wrapper">
+    <div class="content">
+      <div class="inner-content">
+          <h1>Welcome</h1>
+          <div class="nav-buttons">
+            <button mat-raised-button color="accent">GET STARTED</button>
+
+            <button mat-raised-button color="primary">LOGIN</button>
+          </div>
+          <!-- <ul>
+            <li>
+              <a routerLink="/menu">Get started</a>
+            </li>
+            <li>
+              <a [routerLink]="['login', 'form']">Login first</a>
+            </li>
+          </ul> -->
+          <router-outlet></router-outlet>
+      </div>
+    </div>
+  </div>
+</div>

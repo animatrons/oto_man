@@ -5,11 +5,6 @@ import { LoginModalComponent } from './features/login-modal/login-modal.componen
 import { LoginPageComponent } from './features/login-page/login-page.component';
 
 const routes: Routes = [
-  // {
-  //   path: '',
-  //   redirectTo: 'page',
-  //   pathMatch: 'full'
-  // },
   {
     path: 'page',
     component: LoginPageComponent
