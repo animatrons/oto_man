@@ -1,5 +1,5 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
-import { User } from '../../data/User';
+import { User } from '../../../../data/models/User';
 
 @Component({
   selector: 'app-login',
