@@ -7,6 +7,7 @@ import { User } from '../../data/User';
   styleUrls: ['./login.component.scss']
 })
 export class LoginComponent {
+  rememberMe = false;
   user: User = {email: '', password: ''};
 
   @Output() sumbit = new EventEmitter<User>();

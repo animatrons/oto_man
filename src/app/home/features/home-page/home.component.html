@@ -4,18 +4,10 @@
       <div class="inner-content">
           <h1>Welcome</h1>
           <div class="nav-buttons">
-            <button mat-raised-button color="accent">GET STARTED</button>
+            <button mat-raised-button (click)="goToMenu()" color="accent">GET STARTED</button>
 
-            <button mat-raised-button color="primary">LOGIN</button>
+            <button mat-raised-button (click)="openLoginDialog()" color="primary">LOGIN</button>
           </div>
-          <!-- <ul>
-            <li>
-              <a routerLink="/menu">Get started</a>
-            </li>
-            <li>
-              <a [routerLink]="['login', 'form']">Login first</a>
-            </li>
-          </ul> -->
           <router-outlet></router-outlet>
       </div>
     </div>

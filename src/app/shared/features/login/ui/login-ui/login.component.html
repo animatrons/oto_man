@@ -1,29 +1,28 @@
-<main class="form-singin w-100 m-auto">
-  <form #myForm="ngForm" (ngSubmit)="onSubmit()" >
-    <h1 class="h3 mb-3">Please sign in</h1>
-    <fieldset>
-      <small id="passwordHelp" class="text-danger" >
+<!-- <main class="form-singin w-100 m-auto"> -->
+  <form #myForm="ngForm" (ngSubmit)="onSubmit()">
+    <fieldset class="fieldset">
 
-      </small>
-      <div class="form-floating mt-3">
-        <input type="email" [(ngModel)]="user.email" name="emailFormControl"
-          required class="form-control form-signin-email" id="floatingInput"
-          placeholder="name@example.com">
-        <label for="floatingInput">Email adress</label>
+      <mat-form-field appearance="outline">
+        <mat-label>Email address</mat-label>
+        <input matInput #email required placeholder="name@example.com" type="email" [(ngModel)]="user.email" name="emailFormControl">
+        <mat-hint>Hint</mat-hint>
+      </mat-form-field>
+
+      <mat-form-field appearance="outline">
+        <mat-label>Password</mat-label>
+        <input matInput #password required placeholder="password" type="password" [(ngModel)]="user.password" name="passwordFormControl">
+        <mat-icon matSuffix>visibility</mat-icon>
+        <mat-hint>Hint</mat-hint>
+      </mat-form-field>
+
+      <div class="checkbox my-3">
+        <mat-checkbox [(ngModel)]="rememberMe" ngDefaultControl name="checkboxFormControl">Remember me</mat-checkbox>
       </div>
-      <div class="form-floating">
-        <input type="password" [(ngModel)]="user.password" name="passwordFormControl"
-          required placeholder="pss" class="form-control form-signin-password" id="floatingPassword">
-        <label for="floatingPassword">Password</label>
-      </div>
-      <div class="chackbox mb-3">
-        <label>
-          <input type="checkbox" value="remember">
-          Remember me
-        </label>
-      </div>
-      <button type="submit" [disabled]="!myForm.valid"
-        class="btn btn-lg btn-primary w-100">Login</button>
+
+      <button mat-raised-button color="accent" type="submit" [disabled]="!myForm.valid"
+        class="mx-3">Login</button>
+
     </fieldset>
   </form>
-</main>
+<!-- </main> -->
+

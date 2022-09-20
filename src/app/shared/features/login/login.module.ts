@@ -5,6 +5,7 @@ import { LoginRoutingModule } from './login-routing.module';
 import { LoginFormModule } from './features/login-form/login-form.module';
 import { LoginModalModule } from './features/login-modal/login-modal.module';
 import { LoginPageModule } from './features/login-page/login-page.module';
+import { MatButtonModule } from '@angular/material/button';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { LoginPageModule } from './features/login-page/login-page.module';
     LoginRoutingModule,
     LoginFormModule,
     LoginModalModule,
-    LoginPageModule
+    LoginPageModule,
+    MatButtonModule
   ]
 })
 export class LoginModule { }
