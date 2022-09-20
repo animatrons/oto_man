@@ -20,7 +20,7 @@ export class HomeComponent implements OnInit {
   }
 
   goToMenu() {
-    this.router.navigate(['/menu']);
+    this.router.navigate(['/menu/customers']);
   }
 
 }

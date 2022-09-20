@@ -5,7 +5,7 @@ import { User } from '../../data/User';
 
 @Component({
   template: `
-    <h1 mat-dialog-title>The Login Modal is READY</h1>
+    <h1 mat-dialog-title>Identify yourself</h1>
     <div mat-dialog-content>
       <div class="">
         <div>
